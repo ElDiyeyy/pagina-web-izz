@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="introduccion">
+    <div class="container">
+        <h1>Un pequeño resumen...</h1>
+        <p>Aunque pienses que no tengo ni idea de informática, he de decir que algo sí que he aprendido en estos dos años. No te creas que me he tocado los huevos a dos manos jajajaja. Bueno, espero que disfrutes este pequeño detalle y recuerdes que los informáticos también podemos ser detallistas y románticos a veces.</p>
+        <h1>La suerte que tengo contigo...</h1>
+        <p>No te imaginas la suerte que tengo contigo, quizás jamás puedas verte con los ojos con los que yo te veo, pero para que te hagas una pequeña idea, te dejo unas fotillos que te he ido sacando en lo poco que te dejas.</p>
+        <div class="photo-gallery">
+            <div class="photo-item" onclick="showComment('comment7')">
+                <img src="images/img7.jpg" alt="Foto 7">
+                <p id="comment7" class="comment">El paseito por Logroño...</p>
+            </div>
+            <div class="photo-item" onclick="showComment('comment8')">
+                <img src="images/img8.jpg" alt="Foto 8">
+                <p id="comment8" class="comment">El dia que me dibujaste una langosta en la ventanilla, te voy a matar</p>
+            </div>
+            <div class="photo-item" onclick="showComment('comment9')">
+                <img src="images/img9.jpg" alt="Foto 9">
+                <p id="comment9" class="comment">De verdad que no puedes estar más mona con el atardecer de fondo, simplemente 10/10</p>
+            </div>
+            <div class="photo-item" onclick="showComment('comment10')">
+                <img src="images/img10.jpg" alt="Foto 10">
+                <p id="comment10" class="comment">Me acuerdo que este día estuve deseando sacarte una foto desde que salimos a la terraza porque estabas simplemente outstanding, aunque a veces me cuesta pedirtelo o decirtelo...pero ya sabes que aunque no parezca, yo también soy un verguenzas del copon</p>
+            </div>
+        </div>
+        <button onclick="nextPage()">Siguiente</button>
+    </div>
+
+    <script>
+        function showComment(commentId) {
+            const comment = document.getElementById(commentId);
+            if (comment.style.display === 'block') {
+                comment.style.display = 'none';
+            } else {
+                comment.style.display = 'block';
+            }
+        }
+
+        function nextPage() {
+            window.location.href = 'fotos.html';
+        }
+    </script>
+</body>
+</html>

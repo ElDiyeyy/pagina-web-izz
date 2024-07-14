@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis fotos contigo <3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="fotos">
+    <div class="container">
+        <h1>Mis fotos contigo <3 </h1>
+            <p>De verdad que me da palo pedirte fotos porque siento que las estropeo, pero, joder, como no me voy a sacar fotos contigo...</p>
+        <div class="photo-gallery">
+            <div class="photo-item" onclick="showComment('comment1')">
+                <img src="images/img1.jpg" alt="Foto 1">
+                <p id="comment1" class="comment">Mi primera foto contigo, todos esos meses queriendo tener una foto contigo y ni en mis mejores sueños hubiera imaginado que quedara tan bonita</p>
+            </div>
+            <div class="photo-item" onclick="showComment('comment2')">
+                <img src="images/img2.jpg" alt="Foto 2">
+                <p id="comment2" class="comment">Nuestra ultima foto, no sabes lo bonito que fue dar ese paseo contigo, además tu eres la que hace bonita la foto</p>
+            </div>
+            <div class="photo-item" onclick="showComment('comment3')">
+                <img src="images/img3.jpg" alt="Foto 3">
+                <p id="comment3" class="comment">Los viajes a Logroño, poder pasar todo el día contigo siempre es increíble, pero aquel día, bebiendo juntos, riéndonos juntos y hablando de nuestras cosas...Simplemente el cielo</p>
+            </div>
+            <div class="photo-item" onclick="showComment('comment4')">
+                <img src="images/img4.jpg" alt="Foto 4">
+                <p id="comment4" class="comment">Mi fondo de pantalla, aunque yo joda la foto solo por verte a ti merece la pena ponermela y poder verte siempre que enciendo el móvil</p>
+            </div>
+            <div class="photo-item" onclick="showComment('comment5')">
+                <img src="images/img5.jpg" alt="Foto 5">
+                <p id="comment5" class="comment">La vuelta a casa, el bereal que subimos cuando ya todo nos empezaba a dar igual, nos fuimos a las 5 del centro y eran las 9 de la mañana, no se ni que hicimos pero se me pasó como un cuarto de hora, cositas de estar con la persona que quieres</p>
+                  </div>
+                  <div class="photo-item" onclick="showComment('comment6')">
+                <img src="images/iz2.jpeg" alt="Foto 5">
+                <p id="comment6" class="comment">Como ya puse...The office y tú...</p>
+                  </div>
+                  <div class="photo-item" onclick="showComment('comment7')">
+                <img src="images/iz3.jpeg" alt="Foto 5">
+                <p id="comment7" class="comment">Nuestro sitio secreto tsss, esta es la primera foto que vió tu madre juntos jajajaja</p>
+                  </div>
+                  <div class="photo-item" onclick="showComment('comment8')">
+                <img src="images/iz4.jpeg" alt="Foto 5">
+                <p id="comment8" class="comment">Esta foto es sin contexto pero me gusta ;D</p>
+                  </div>
+                   <div class="photo-item" onclick="showComment('comment9')">
+                <img src="images/iz5.jpeg" alt="Foto 5">
+                <p id="comment9" class="comment">Esta es del día de la terraza pero como siempre me gusta como sales así que la pongo no me juzgues</p>
+                  </div>
+
+        </div>
+        <button onclick="nextPage()">Siguiente</button>
+    </div>
+
+    <script>
+        function showComment(commentId) {
+            const comment = document.getElementById(commentId);
+            if (comment.style.display === 'block') {
+                comment.style.display = 'none';
+            } else {
+                comment.style.display = 'block';
+            }
+        }
+
+        function nextPage() {
+            window.location.href = 'final.html';
+        }
+    </script>
+</body>
+</html>
